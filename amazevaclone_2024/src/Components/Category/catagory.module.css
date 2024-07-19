@@ -1,0 +1,47 @@
+.category{
+  height: 350px;
+  width: 350px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.category h2,
+.category img{
+width: 100%;
+object-fit: contain;
+max-height: 250px;
+padding: 0px 10px;    
+}
+
+.category h2,
+.category a{
+text-decoration: none;
+color: rgb(35,35,35);
+}
+
+.category p{
+padding: 5px;
+margin-left: 15px;
+}
+
+.category p{
+font-weight: bold;
+font-size: 12px;
+color: rgb(9,132,209);
+}
+
+.category a:hover{
+text-decoration: underline;
+}
+
+.category__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  max-width: 1600px;
+  place-items: center;
+  gap: 50px;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -10%;
+}
